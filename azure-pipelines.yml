@@ -20,7 +20,7 @@ stages:
     - task: Docker@2
       inputs:
        containerRegistry: 'docker-hub-conn'
-       repository: 'samplepoc/hello-world-devops'
+       repository: 'sureshtungala/hello-world-devops'
        command: 'buildAndPush'
        Dockerfile: '**/Dockerfile'
        tags: '$(tag)'
